@@ -1,4 +1,3 @@
-/classpath lib/aplu5.jar
 import ch.aplu.turtle.*;
 
 void drawSquare(int size){
