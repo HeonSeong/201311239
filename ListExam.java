@@ -2,30 +2,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 class ListExam {
-	List<Integer>mylist=new ArrayList<Integer>();
-	
-	void setNumber(){
+
+	void setNumber(List<Integer> aList){
 	int i=1;
 	while(i<=1000){
 		if(i%4==0&&i%5!=0){
-			mylist.add(i);
+			aList.add(i);
 		}
 		i++;
 	}
-	System.out.println(mylist);
+	System.out.println(aList);
 	}
 	
-	int sumList(){
-		int sum=0;
-		for(int i=0;i<mylist.size();i++){
-			sum+=mylist.get(i);
+	int sumList(List<Integer> aList){
+		int sum=0;	
+		int maxiter=aList.size();
+		for(int i=0;i<maxiter;i++){
+			sum+=aList.get(i);
 			}
-		System.out.println("ÇÕ°è:"+sum);
+		System.out.println("í•©ê³„:"+sum);
 		return sum;
 	}
 	public static void main(String[] args) {
+		List<Integer>mylist=new ArrayList<Integer>();
 		ListExam test1=new ListExam();
-		test1.setNumber();
-		test1.sumList();
+		test1.setNumber(mylist);
+		test1.sumList(mylist);
 	}
 }
