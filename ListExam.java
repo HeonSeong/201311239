@@ -3,7 +3,7 @@ import java.util.List;
 
 class ListExam {
 
-	void setNumber(List<Integer> aList){
+	void setNumber(ArrayList<Integer> aList){
 	int i=1;
 	while(i<=1000){
 		if(i%4==0&&i%5!=0){
@@ -14,7 +14,7 @@ class ListExam {
 	System.out.println(aList);
 	}
 	
-	int sumList(List<Integer> aList){
+	int sumList(ArrayList<Integer> aList){
 		int sum=0;	
 		int maxiter=aList.size();
 		for(int i=0;i<maxiter;i++){
@@ -24,7 +24,7 @@ class ListExam {
 		return sum;
 	}
 	public static void main(String[] args) {
-		List<Integer>mylist=new ArrayList<Integer>();
+    ArrayList<Integer>mylist=new ArrayList<Integer>();
 		ListExam test1=new ListExam();
 		test1.setNumber(mylist);
 		test1.sumList(mylist);
