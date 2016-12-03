@@ -1,9 +1,9 @@
 package com.sd.ch8;
 
-public class Rectangle extends Shape{
+public class p6_Rectangle extends p6_Shape{
   private final double width,height,area,perimeter;
   
-  public Rectangle(double width,double height){
+  public p6_Rectangle(double width,double height){
     this.width=width;
     this.height=height;
     this.area=width*height;
