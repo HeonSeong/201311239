@@ -4,10 +4,13 @@ public class PlayGame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+		boolean confirm=true;
+		while(confirm){
 		Scanner sc =new Scanner(System.in);
 		System.out.println("Dice : 1 or yut : 2 exit : 3");
 		int select =sc.nextInt();
-		System.out.println(select+"¹øÀ» ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.");
+		System.out.println(select+"ë²ˆì„ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.");
 		
 		if(select==1){
 			DiceGame dice=new DiceGame();
@@ -20,9 +23,11 @@ public class PlayGame {
 
 		}
 		else if(select==3){
-			System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
+			confirm=false;
 		}
-		
-			}
+	}	
+    }
 
 }
+
